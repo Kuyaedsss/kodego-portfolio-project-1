@@ -9,22 +9,24 @@
   <body>
     <section id="hero-makeappointment">
       <div id="image-overlay-makeappointment">
-        <nav id="navigationbar">
-          <div id="logo">
-            <img src="sanatiologo.png" style="opacity: 0.6" />
-            <h3>Sanatio Psychological Services</h3>
-          </div>
-          <div id="link">
-            <a id="home" href="./index.html">HOME</a>
-            <a id="services" href="./index.html#servicesection">SERVICES</a>
-            <a id="about" href="./index.html#aboutsection">ABOUT</a>
-            <div id="makeappointment-container">
-              <a id="makeappointment" href="./makeappointment.html"
-                >MAKE APPOINTMENT</a
-              >
+        <header>
+          <nav id="navigationbar">
+            <div id="logo">
+              <img src="sanatiologo.png" style="opacity: 0.6" />
+              <h3>Sanatio Psychological Services</h3>
             </div>
-          </div>
-        </nav>
+            <div id="link">
+              <a id="home" href="./index.html">HOME</a>
+              <a id="services" href="./index.html#servicesection">SERVICES</a>
+              <a id="about" href="./index.html#aboutsection">ABOUT</a>
+              <div id="makeappointment-container">
+                <a id="makeappointment" href="./makeappointment.html"
+                  >MAKE APPOINTMENT</a
+                >
+              </div>
+            </div>
+          </nav>
+        </header>
       </div>
       <div id="makeappointment-text">
         <h1 id="white">Make an</h1>
@@ -124,4 +126,14 @@
       </div>
     </footer>
   </body>
+  <script>
+    document.addEventListener("scroll", () => {
+      const nav = document.querySelector("nav");
+      if (window.scrollY > 0) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    });
+  </script>
 </html>
