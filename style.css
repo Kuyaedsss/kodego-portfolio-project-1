@@ -196,6 +196,7 @@ a:hover {
   text-align: center;
   font-size: 40px;
   padding: 30px;
+  font-weight: 1;
 }
 #servicesection .top p {
   text-align: center;
@@ -227,9 +228,10 @@ section#servicesection .row .card img {
   z-index: -4;
 }
 section#servicesection .row .card h3 {
-  font-size: 24px;
+  font-size: 25px;
   text-align: center;
   color: rgb(37, 153, 219);
+  font-weight: 1;
 }
 
 section#servicesection .top img {
