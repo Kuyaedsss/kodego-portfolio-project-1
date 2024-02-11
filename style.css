@@ -105,6 +105,9 @@ a:hover {
   margin-top: 0px;
   border-radius: 5px;
 }
+#makeappointment-container-about {
+  margin-top: 50px;
+}
 #makeappointment:hover {
   margin-left: 30px;
   background-color: rgb(41, 146, 207);
@@ -178,10 +181,6 @@ a:hover {
   text-align: center;
 }
 
-#welcomesection {
-  display: flex;
-  justify-content: center;
-}
 #intro {
   font-size: 20px;
   max-width: 500px;
@@ -191,14 +190,27 @@ a:hover {
   text-align: center;
 }
 #servicesection {
-  background-color: rgb(233, 231, 231);
   z-index: -2;
+  width: 100vw;
+  height: 150vh;
+  padding: 0px;
+  margin: 0px;
+}
+#servicesection-wrapper {
+  background-color: rgb(187, 187, 187);
+  width: 100vw;
+  height: 150vh;
+  position: absolute;
 }
 #servicesection .top h1 {
   text-align: center;
   font-size: 40px;
   padding: 30px;
   font-weight: 1;
+}
+
+#servicesection .top {
+  margin-top: 100px;
 }
 #servicesection .top p {
   text-align: center;
@@ -246,40 +258,46 @@ section#servicesection .top {
 section#aboutsection h2 {
   text-align: center;
   font-size: 40px;
-  padding: 30px;
-  color: white;
+  padding: 20px;
+  color: rgb(69, 153, 202);
   font-weight: 1;
 }
 
-section#aboutsection img {
-  width: 100px;
-  height: 100px;
-  display: block;
-  margin: auto;
-}
 section#aboutsection #background {
-  background-color: rgba(64, 93, 102, 0.651);
-  height: 100vh;
-  padding: 30px;
-  position: relative;
+  position: absolute;
+  margin-top: 100px;
 }
 section#aboutsection p {
   font-size: 30px;
   line-height: 2;
   color: white;
-  padding: 50px;
+  padding: 20px;
   font-weight: 1;
-  width: 1000px;
   display: block;
   margin: auto;
 }
+#about-overlay {
+  background-color: rgba(64, 93, 102, 0.651);
+  height: 240vh;
+}
 section#aboutsection {
   background-image: url("aboutbg.jpg");
-  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 240vh;
   position: relative;
   padding: 0;
   margin: 0;
   z-index: -1;
+}
+.headtext {
+  padding: 0px;
+  margin: 0px;
+}
+.head-description {
+  padding: 0px;
+  margin: 0px;
 }
 #makeappointment-below-about {
   background-color: rgb(69, 153, 202);
@@ -483,7 +501,7 @@ footer {
   width: 200px;
 }
 #welcomesection {
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   display: block;
   margin: auto;
@@ -535,4 +553,128 @@ p {
   display: block;
   margin: auto;
   font-size: 20px;
+}
+#psychologistsection #profile img {
+  display: inline;
+}
+#psychologistsection #profile #profilepic {
+  border-radius: 50%;
+  width: 150px;
+}
+
+#psychologistsection #profile #profilepicandlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 50px;
+}
+#psychologistsection #profile #profilepicandlogo h3 {
+  font-size: 20px;
+}
+#psychologistsection #profile #profilepicandlogo #linetopandbot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+}
+#education .title {
+  font-size: 24px;
+  font-weight: 1px;
+  padding-top: 10px;
+  text-align: center;
+  color: rgb(37, 153, 219);
+}
+#description h2 {
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 20px;
+  font-weight: 1;
+}
+#description p {
+  font-size: 24px;
+  width: 600px;
+}
+#description {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#description img {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+#education p {
+  font-size: 20px;
+}
+#education {
+  padding-top: 20px;
+  margin: auto;
+  display: block;
+}
+.degrees {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+#educationhead {
+  font-weight: 2px;
+  font-size: 24px;
+  text-align: center;
+  color: rgb(37, 153, 219);
+}
+#psychologistsection #profile #profilepicandlogo #logo {
+  width: 50px;
+  height: 50px;
+}
+#psychologistsection {
+  width: 100vw;
+  height: 170vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#psychologistsection #border {
+  width: 800px;
+  height: 700px;
+  background-color: rgb(226, 226, 225);
+}
+#psychologistsection #profile h3 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 1px;
+  color: rgb(37, 153, 219);
+}
+#psychologistsection #profile #license {
+  display: flex;
+  justify-content: center;
+}
+#makeappointment-below-psychologist {
+  background-color: rgb(69, 153, 202);
+  padding: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  width: 190px;
+}
+#psychologistsection #profile #license p {
+  padding: 0px 15px;
+  font-weight: 1;
+  font-size: 20px;
+}
+#psychologistsection #profile #license .psychologisttext {
+  border-right: 1px solid black;
+  margin-right: 2px;
+  font-size: 24px;
+}
+#psychologistsection #profile #license .licensenumber {
+  border-left: 1px solid black;
+  font-size: 24px;
+}
+#psychologistsection {
+  position: relative;
 }
